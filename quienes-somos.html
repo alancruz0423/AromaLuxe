@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiénes Somos | Aroma Luxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .seccion {
+         display: flex;
+         justify-content: center; 
+         align-items: center;     
+         flex-direction: column;  
+         min-height: 80vh;        
+        }
+        .oculto{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AROMA LUXE</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito (<span id="contador">0</span>)</a></li>
+            <li><a href="busqueda.html">Buscar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="seccion">
+    <h2>Nuestra Historia</h2>
+    <p>
+        Aroma Luxe representa la fusión entre elegancia,
+        arte y sofisticación.
+    </p>
+
+    <button id="verMas">Ver más</button>
+    <p id="infoExtra" class="oculto">
+        Somos una empresesa con un solo objetivo. Crear experiencias sensoriales únicas con fragancias exclusivas.
+    </p>
+
+    <h3>Nuestro Equipo</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Correo</th>
+        </tr>
+        <tr>
+            <td>Reyna Guiedaly Velazquez Alvarez</td>
+            <td>Directora Creativa</td>
+            <td>RGuiedaly@aromaluxe.com</td>
+        </tr>
+        <tr>
+            <td>Fabio Cesar Gonzales Ballinas</td>
+            <td>Desarrollador</td>
+            <td>FabioC@aromaluxe.com</td>
+        </tr>
+        <tr>
+            <td>Alan Tello Cruz</td>
+            <td>Desarrollador</td>
+            <td>AlanT@aromaluxe.com</td>
+        </tr>
+    </table>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

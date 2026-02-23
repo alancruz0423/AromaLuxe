@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo | Aroma Luxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .producto img {
+          width: 250px;       
+         height: 250px;      
+         object-fit: cover;  
+         border-radius: 8px; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AROMA LUXE</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito (<span id="contador">0</span>)</a></li>
+            <li><a href="busqueda.html">Buscar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="catalogo">
+    <h2>Colección Exclusiva</h2>
+
+    <div class="productos">
+        <div class="producto">
+            <img src="https://img.freepik.com/fotos-premium/frasco-perfume-marca-flores-rosas-sobre-fondo-rosa_875825-44941.jpg" alt="">
+            <h3>Rose Éternelle</h3>
+            <p>$120</p>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://blog.vperfumes.com/wp-content/uploads/2022/10/presentation-of-woody-perfume-with-wooden-notes-on-brown-background.jpg" alt="">
+            <h3>Wood Intense</h3>
+            <p>$150</p>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://thumbs.dreamstime.com/b/frasco-de-perfume-con-dise%C3%B1o-atractivo-sin-marca-aislada-en-fondo-blanco-botella-vac%C3%ADa-l%C3%ADquido-perfumista-este-viene-una-274091981.jpg" alt="">
+            <h3>Golden Oud</h3>
+            <p>$180</p>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+.producto img {
+    width: 250px;       /* ancho fijo */
+    height: 250px;      /* alto fijo */
+    object-fit: cover;  /* mantiene proporción y recorta lo que sobra */
+    border-radius: 8px; /* opcional: esquinas redondeadas */
+}

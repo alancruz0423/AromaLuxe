@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito | Aroma Luxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .titulo-carrito{
+            text-align: center;
+            margin-top: 80px;
+        }
+        .total{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .titulo-pago{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn-pago{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AROMA LUXE</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito (<span id="contador">0</span>)</a></li>
+            <li><a href="busqueda.html">Buscar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="seccion">
+    <h2 class="titulo-carrito">Tu Carrito</h2>
+
+    <table>
+        <tr>
+            <th>Perfume</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Rose Éternelle</td>
+            <td><input type="number" class="cantidad" value="1" min="1"></td>
+            <td class="precio">120</td>
+        </tr>
+        <tr>
+            <td>Wood Intense</td>
+            <td><input type="number" class="cantidad" value="1" min="1"></td>
+            <td class="precio">150</td>
+        </tr>
+    </table>
+
+    <h3 class="total">Total: $<span id="total">270</span></h3>
+
+    <!-- SECCIÓN DE PAGO -->
+    <section class="pago">
+        <h2 class="titulo-pago">Pagar con Tarjeta</h2>
+        <form id="formPago">
+            <input type="text" placeholder="Nombre en la tarjeta" required>
+            <input type="text" placeholder="Número de tarjeta (16 dígitos)" 
+                   pattern="\d{16}" required>
+            <input type="text" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+            <input type="text" placeholder="CVV (3 dígitos)" pattern="\d{3}" required>
+           <button type="submit" class="btn-pago">Confirmar Pago</button>
+        </form>
+    </section>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

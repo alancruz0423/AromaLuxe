@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar | Aroma Luxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .seccion {
+          display: flex;
+          justify-content: center;
+          align-items: center;     
+          flex-direction: column;  
+          min-height: 80vh;        
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AROMA LUXE</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito (<span id="contador">0</span>)</a></li>
+            <li><a href="busqueda.html">Buscar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="seccion">
+    <h2>Buscar Perfume</h2>
+
+    <form id="formBusqueda">
+        <input type="text" id="buscar" placeholder="Ej: floral, oud..." required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="resultados"></div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

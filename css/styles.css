@@ -1,0 +1,195 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: gold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: gold;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("../img/banner.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.btn-principal {
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.btn-principal:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* PRODUCTOS */
+.catalogo {
+    padding: 150px 40px 80px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.producto {
+    background: #1a1a1a;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.producto:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(255,215,0,0.4);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin-top: 15px;
+    color: gold;
+}
+
+.producto button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.producto button:hover {
+    background: white;
+}
+
+/* FORMULARIOS */
+form input {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    width: 280px;
+    border-radius: 25px;
+    border: none;
+}
+
+form button {
+    padding: 10px 25px;
+    background: gold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* TABLAS */
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid gold;
+    padding: 12px;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
